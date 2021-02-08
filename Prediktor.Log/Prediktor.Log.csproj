@@ -7,6 +7,7 @@
 
 	<PropertyGroup>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	</PropertyGroup>
 	
 	<PropertyGroup>
@@ -72,7 +73,7 @@
     <None Include="log.snk" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="IF /I $(ConfigurationName)==Release (&#xD;&#xA;          IF NOT EXIST &quot;$(TargetDir)PDB&quot; md &quot;$(TargetDir)PDB&quot;&#xD;&#xA;          move /Y &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;$(TargetDir)PDB\$(TargetName).pdb&quot;&#xD;&#xA;      )" />
+		<Exec Command="IF /I $(ConfigurationName)==Release (&#xD;&#xA;          IF NOT EXIST &quot;$(TargetDir)PDB&quot; md &quot;$(TargetDir)PDB&quot;&#xD;&#xA;          copy /Y &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;$(TargetDir)PDB\$(TargetName).pdb&quot;&#xD;&#xA;      )" />
   </Target>
 
 </Project>
