@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Prediktor.Log/bin
+/Prediktor.Log/obj
+/Prediktor.Log4Net/bin
+/Prediktor.Log4Net/obj
