@@ -7,3 +7,5 @@
 /Prediktor.Log/obj
 /Prediktor.Log4Net/bin
 /Prediktor.Log4Net/obj
+/Prediktor.Log4Net/Prediktor.Log4Net.csproj.user
+/Prediktor.Log4Net/Properties/PublishProfiles/FolderProfile.pubxml.user

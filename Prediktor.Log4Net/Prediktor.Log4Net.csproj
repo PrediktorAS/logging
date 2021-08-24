@@ -2,6 +2,7 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
 
@@ -63,9 +64,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="IF /I $(ConfigurationName)==Release (&#xD;&#xA;          IF NOT EXIST &quot;$(TargetDir)PDB&quot; md &quot;$(TargetDir)PDB&quot;&#xD;&#xA;          move /Y &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;$(TargetDir)PDB\$(TargetName).pdb&quot;&#xD;&#xA;      )" />
-  </Target>
 </Project>
