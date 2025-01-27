@@ -57,6 +57,7 @@
     <Copyright>Copyright (c) TGS Prediktor 2025</Copyright>
     <PackageProjectUrl>https://www.prediktor.com/</PackageProjectUrl>
     <Version>1.0.9</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -77,6 +78,10 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="log.snk" />
   </ItemGroup>
   <ItemGroup>
