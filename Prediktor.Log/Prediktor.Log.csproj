@@ -50,6 +50,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>log.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PrediktorLog</Title>
+    <Company>TGS Prediktor</Company>
+    <Authors>PrediktorAS</Authors>
+    <Copyright>Copyright (c) TGS Prediktor 2025</Copyright>
+    <PackageProjectUrl>https://www.prediktor.com/</PackageProjectUrl>
+    <Version>1.0.9</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -70,7 +78,14 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="log.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="IF /I $(ConfigurationName)==Release (&#xD;&#xA;          IF NOT EXIST &quot;$(TargetDir)PDB&quot; md &quot;$(TargetDir)PDB&quot;&#xD;&#xA;          copy /Y &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;$(TargetDir)PDB\$(TargetName).pdb&quot;&#xD;&#xA;      )" />
