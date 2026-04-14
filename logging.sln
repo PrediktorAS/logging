@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prediktor.Log", "Prediktor.Log\Prediktor.Log.csproj", "{F8668E99-0A51-4E5C-BEA2-2425096811B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prediktor.Log4Net", "Prediktor.Log4Net\Prediktor.Log4Net.csproj", "{73CBB5A6-9342-448B-A37A-39DD3737BB93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B5145D2-95EF-4470-9039-1F841328CDA9}"
+	ProjectSection(SolutionItems) = preProject
+		How to Nuget Update.txt = How to Nuget Update.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

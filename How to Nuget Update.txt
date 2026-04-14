@@ -1,0 +1,10 @@
+How to update these packages:
+
+Update version numbers in the .csproj files for both Prediktor.Log and Prediktor.Log4Net. The version number is in the <Version> tag.
+Rebuild solution and pack new NuGet packages (Right click on Project -> Pack).
+Finally push these packages to NuGet using the following commands in the terminal
+(replace <Nuget: publish_key_4 from Keeper> with your actual API key):
+
+
+dotnet nuget push "D:\GitHub\logging\Prediktor.Log\bin\Release\Prediktor.Log.1.0.10.nupkg" --source https://api.nuget.org/v3/index.json --api-key <Nuget: publish_key_4 from Keeper> --skip-duplicate
+dotnet nuget push "D:\GitHub\logging\Prediktor.Log4Net\bin\Release\Prediktor.Log4Net.1.0.10.nupkg" --source https://api.nuget.org/v3/index.json --api-key <Nuget: publish_key_4 from Keeper> --skip-duplicate

@@ -56,7 +56,7 @@
     <Authors>PrediktorAS</Authors>
     <Copyright>Copyright (c) TGS Prediktor 2025</Copyright>
     <PackageProjectUrl>https://www.prediktor.com/</PackageProjectUrl>
-    <Version>1.0.9</Version>
+    <Version>1.0.10</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">

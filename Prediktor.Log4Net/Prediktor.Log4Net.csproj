@@ -3,6 +3,15 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFramework>netstandard2.0</TargetFramework>
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+   <PackageVersion>1.0.10</PackageVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PrediktorLog4Net</Title>
+    <Company>TGS Prediktor</Company>
+    <Authors>PrediktorAS</Authors>
+    <Description>Prediktor logging integration for log4net.</Description>
+    <Copyright>Copyright (c) TGS Prediktor 2025</Copyright>
+    <PackageProjectUrl>https://www.prediktor.com/</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 
@@ -62,6 +71,12 @@
       <Project>{f8668e99-0a51-4e5c-bea2-2425096811b3}</Project>
       <Name>Prediktor.Log</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="log4net" Version="3.3.0" />
